@@ -1,0 +1,187 @@
+/**
+ * CUSTOM CSS
+ *
+ * Here you can add your custom CSS code.
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.employment-detail {
+  background-color: rgb(236, 238, 238);
+  margin-top: 1em;
+  padding-top: 10px;
+}
+
+.accordion {
+    /*width: 400px;*/
+    width: 100%;
+    margin: 10px auto;
+    box-shadow:
+        0px 0px 0px 1px rgba(155,155,155,0.3),
+        0px 2px 2px rgba(0,0,0,0.1);
+}
+.accordion label {
+    font-family: Arial, sans-serif;
+    padding: 5px 20px;
+    position: relative;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    line-height: 33px;
+    font-size: 19px;
+    background: #EFEFEF;
+    border: 1px solid #CCC;
+}
+.accordion label:hover {
+    background: #F3F3F3;
+}
+.accordion input + label {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.accordion input:checked + label,
+.accordion input:checked + label:hover {
+    background: #CDECC5;
+    color: #3d7489;
+    box-shadow:
+        0px 0px 0px 1px rgba(155,155,155,0.3),
+        0px 2px 2px rgba(0,0,0,0.1);
+}
+.accordion input {
+    display: none;
+}
+.accordion .article {
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.accordion .article p {
+    font-style: italic;
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px;
+}
+.accordion input:checked ~ .article {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.accordion input:checked ~ .article.ac-small {
+    height: 155px;
+}
+.accordion input:checked ~ .article.ac-medium {
+    height: 195px;
+}
+.accordion input:checked ~ .article.ac-large {
+    height: 245px;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.dvt.active, div.dvt:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+div.dvt:after {
+    content: '\21E9';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+div.dvt.active:after {
+    content: "\21EE";
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.dvt {
+  position: relative;
+}
+
+.dvt-arrow:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    align-content: center;
+    margin-left: 5px;
+}
+
+.dvt-arrow.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+div.company-overview p {
+  font-style: italic;
+}
+
+/*.interest-tag {
+  opacity: 0;
+  font-size: 1.4rem;
+}*/
+
+/*p.interest-tag:hover {
+  opacity: 1;
+}*/
+
+li.interest-tag p {
+  opacity: 0;
+  font-size: 1.3rem;
+}
+
+li.interest-tag:hover p {
+  opacity: 1;
+}

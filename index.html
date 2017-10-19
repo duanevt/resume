@@ -1,0 +1,2256 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+      <script>
+          function setStyleSheet(url){
+             var stylesheet = document.getElementById("themestyle");
+             stylesheet.setAttribute('href', url);
+          }
+console.log("setup accordion onclick")
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+console.log(acc.length)
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                console.log("toggle the actiove something")
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+
+
+  </script>
+        <title>Duane's Resume</title>
+
+        <meta name="description" content="">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Google Font: Lato -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+        <!-- Nivo Lightbox-->
+        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
+        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- Themes -->
+        <link rel="stylesheet" href="assets/css/themes.light.css" id="themestyle">
+        <!--<link rel="stylesheet" href="assets/css/themes.dark.css">-->
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!-- dense.js (Retina plugin) -->
+        <script src="assets/js/dense.js"></script>
+
+        <!-- Nivo Lightbox -->
+        <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+
+        <!-- ScrollReveal -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="c-preloader  js-preloader">
+            <div class="c-preloader__spinner  t-preloader__spinner"></div>
+        </div>
+
+        <div class="c-main-container  js-main-container">
+
+            <!-- ################################ -->
+            <!-- ############ HEADER ############ -->
+            <!-- ################################ -->
+
+            <section class="o-section o-section--header  t-section  t-section--header">
+                <div class="c-header">
+
+                    <div class="o-section__header-bg  t-section__header"></div>
+                    <div class="o-section__content-bg  t-section__content"></div>
+
+                    <div class="o-container">
+                        <div class="o-section__container">
+
+                            <header class="o-section__header  c-header__header  t-section__header">
+                                <div class="c-header__inner-header">
+
+                                    <div class="c-header__avatar">
+                                        <div class="a-header  c-avatar">
+                                            <img class="c-avatar__img" src="assets/images/header/dvt_avatar.jpg" alt="">
+                                        </div><!-- /c-avatar -->
+                                    </div><!-- /c-header-avatar -->
+                                    <button type="button" class="btn btn-outline" name="button"
+                                            >
+                                      theme
+                                    </button>
+                                    <a onclick="setStyleSheet('assets/css/themes.light.css')" href="#">Style 1</a>
+<a onclick="setStyleSheet('assets/css/themes.dark.css')" href="#">Style 2</a>
+                                </div><!-- /c-header__inner-header -->
+                            </header><!-- /o-section__header -->
+
+                            <div class="o-section__content  c-header__content  t-section__content">
+                                <div class="c-header__inner-content">
+
+                                    <div class="c-header__top">
+
+                                        <div class="c-header__brand">
+
+                                            <div class="c-brand">
+                                                <h1 class="c-brand__title  t-title">
+                                                    <span class="c-brand__sizer">
+                                                        <span class="a-header  c-brand__first-word  t-title__first-word">
+                                                            Duane
+                                                        </span>
+                                                        <span class="a-header  c-brand__second-word  t-title__second-word">
+                                                            van Twest
+                                                        </span>
+                                                    </span>
+                                                </h1>
+                                                <h2 class="a-header  c-brand__sub-title  t-sub-title">
+                                                    <span class="c-brand__sizer">
+                                                        Software Engineer
+                                                    </span>
+                                                </h2>
+                                                <h2 class="a-header  c-brand__sub-title  t-sub-title">
+                                                    <span class="c-brand__sizer">
+                                                        Surfer
+                                                    </span>
+                                                </h2>
+                                                <h2 class="a-header  c-brand__sub-title  t-sub-title">
+                                                    <span class="c-brand__sizer">
+                                                        Father of two
+                                                    </span>
+                                                </h2>
+                                                <h1>
+                                                  Driven to building systems to enhance efficiency and productivity for improved user experience.
+                                                </h1>
+                                            </div><!-- /c-brand -->
+
+                                        </div><!-- /c-header__brand -->
+
+                                        <ul class="c-header__social-buttons  c-social-buttons">
+                                            <li class="a-header">
+                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="a-header">
+                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-dribbble"></i>
+                                                </a>
+                                            </li>
+                                            <li class="a-header">
+                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul><!-- /c-header__social-buttons -->
+
+                                    </div><!-- /c-header__top -->
+
+                                    <div class="c-header__contact">
+
+                                        <hr class="a-header  c-header__contact-divider" />
+
+                                        <div class="o-grid">
+
+                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                                <div class="a-header  o-content">
+                                                    <div class="o-content__body">
+                                                        <h4>Location</h4>
+                                                        <address>
+                                                            Brisbane, QLD
+                                                        </address>
+                                                    </div>
+                                                </div><!-- /o-content -->
+                                            </div><!-- /o-grid__col -->
+
+                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                                <div class="a-header  o-content">
+                                                    <div class="o-content__body">
+                                                        <h4>Phone</h4>
+                                                        <p>
+                                                            PO Box 5039
+                                                        </p>
+                                                    </div>
+                                                </div><!-- /o-content -->
+                                            </div><!-- /o-grid__col -->
+
+                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                                <div class="a-header  o-content">
+                                                    <div class="o-content__body">
+                                                        <a href="#" target="_blank" class="t-link-container">
+                                                            <h4>Web</h4>
+                                                            <p>
+                                                                <span class="t-link-container__item--blended">
+                                                                    duanevantwest.com
+                                                                </span>
+                                                            </p>
+                                                        </a><!-- /o-link-container -->
+                                                    </div>
+                                                </div><!-- /o-content -->
+                                            </div><!-- /o-grid__col -->
+
+                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                                <div class="a-header  o-content">
+                                                    <div class="o-content__body">
+                                                        <a href="#" target="_blank" class="t-link-container">
+                                                            <h4>Email</h4>
+                                                            <p>
+                                                                <span class="t-link-container__item--blended">
+                                                                    duanevantwest@gmail.com
+                                                                </span>
+                                                            </p>
+                                                        </a><!-- /o-link-container -->
+                                                    </div>
+                                                </div><!-- /o-content -->
+                                            </div><!-- /o-grid__col -->
+
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /c-header__contact -->
+
+                                </div><!-- /c-header__inner-content -->
+                            </div><!-- /o-section__content -->
+
+                        </div><!-- /o-section__container -->
+
+                    </div><!-- /o-container -->
+
+                </div><!-- /c-header -->
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ############ INTRO ############# -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Profile
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    What I am all about.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <div class="o-content">
+                                <div class="c-intro">
+                                    <div class="o-content__body">
+                                        <p>
+                                          More than 25 years experience in developing large scale software engineering projects - playing an integral role in the delivery of major projects.
+                                        </p>
+                                        <p>
+                                          Outstanding expertise in the design and development of real-time software applications.
+                                        </p>
+                                        <p>
+                                          Involvement in multiple lean/agile driven tech startups incorporating a range of experience from system architect to company structure and roadmaps (feasibility).
+                                        </p>
+                                        <p>
+                                          Major projects are my passion and the opportunity to be involved from concept through to completion of projects is extremely satisfying. Simple, efficient and innovative solutions to existing problems that improve the experience of those interacting with the product.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ########## EXPERTISE ########### -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Expertise
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Domain knowledge.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                01
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Full Stack Mobile Applications</h3>
+                                            <p>
+                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                02
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Security & Cryptography</h3>
+                                            <p>
+                                                Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. Ut aliquam sollicitudin leo.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                03
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Real Time SCADA</h3>
+                                            <p>
+                                                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Vivamus vestibulum nulla cras ornare tristique elit nec ante.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                04
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Safety Critical Software</h3>
+                                            <p>
+                                                Morbi in sem quis dui placerat ornare. Ut aliquam sollicitudin leo. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras ante. Vivamus vestibulum nulla nec ante.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                05
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Embedded Linux</h3>
+                                            <p>
+                                                Phasellus ultrices nulla quis nibh. Fusce lobortis lorem. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, sodales sit amet, nisi.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                06
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3>Business Applications</h3>
+                                            <p>
+                                                Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ############ SKILLS ############ -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Skills
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Progress bars, anyone?
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    2<small> yrs</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>javascript / typescript</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="30"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    75<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>Illustrator</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="75"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    70<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>Git</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="70"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    65<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>After Effects</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="65"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    90<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>Sketch</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="90"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    50<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>CSS3 Animation</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="50"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    85<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>PageSpeed Insights</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="85"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    95<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>SEO</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="95"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ########## EXPERIENCE ########## -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Experience
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Yes. I&#39;ve been around.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  u-pb-0">
+
+                            <div class="a-experience-timeline  c-timeline  t-border-color">
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                              <div class="c-work__timeframe">
+                                                  2017 &ndash; Present
+                                              </div>
+                                              <h3 class="c-work__heading">
+                                                  Willow.
+                                              </h3>
+                                              <h4 class="c-work__title">
+                                                  Founder / CTO
+                                              </h4>
+                                              <div class="c-work__location">
+                                                  Brisbane, Australia
+                                              </div>
+                                              <!-- <div class="dvt-arrow">
+
+                                              </div> -->
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                  Willow provides a central compliance system targeting daily work flow around site prestart coverage in the construction industry.
+                                                </p>
+                                                <p>
+                                                  As a small startup, a wide range of involvement is required for development and roll out of the flagship product.
+                                                </p>
+                                            </div>
+
+                                            <div class="panel o-grid">
+                                              <div class="o-grid__col-md-6 employment-detail">
+                                                <ul>
+                                                  <li>
+                                                    <p>Market Analysis and product requirements</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Project roadmaps for tiered releases</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Development of prototypes and demonstrations</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>System Architecture</p>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                              <div class="o-grid__col-md-6 employment-detail">
+                                                <ul>
+                                                  <li>
+                                                    <p>Management of software development</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Outsourcing control</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Liaison with trial customers</p>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div><!-- /panel o-grid-->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                          <div class="o-grid__col-md-5">
+                                              <div class="c-work__timeframe">
+                                                  2016 &ndash; Present
+                                              </div>
+                                              <h3 class="c-work__heading">
+                                                  CoRCHECKS.
+                                              </h3>
+                                              <h4 class="c-work__title">
+                                                  Founder / CTO
+                                              </h4>
+                                              <div class="c-work__location">
+                                                  Brisbane, Australia
+                                              </div>
+                                          </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                  CoRCHECKS is an app based compliance system that ensures that the primary duty obligation under Chain of Responsibility (CoR) legislation will pass the scrutiny of the National Heavy Vehicle Regulator (NHVR).
+                                                </p>
+                                                <p>
+                                                  CoRCHECKS is a tech start up which has the primary goal to simplify transport compliance via technological innovation.
+                                                </p>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5">
+                                                <div class="c-work__timeframe">
+                                                    2015 &ndash; 2017
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Tradfu
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Co Founder / Director / Software Development
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Qld
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Tradfu is an innovative solution to linking trade services to customers based on location, schedules, job details and ratings.
+                                                </p>
+                                                <p>
+                                                  Mobile based application for mulitple platforms with integrated cloud services that include location, notification, scheduling and billing services.
+                                                </p>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    2008 &ndash; 2014
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Schneider Electric
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Software Engineer
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Qld
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Nu-Lec Industries specialises in medium voltage overhead switchgear, providing advanced solutions and quality products for electricity network operators around the world. In 2009, Nu-Lec Industries became part of Schneider Electric (Australia) Ltd.
+                                                </p>
+                                            </div>
+                                            <div class="panel o-grid">
+                                              <div class="container employment-detail">
+                                                <ul>
+                                                  <li>
+                                                    <p>Focused on delivering next generation products to market, working from initial requirements through to R&D, and to support application development for in-house (business) software.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Worked with the R&D Manager on setting project strategy and resources, ensuring projects followed Agile best practice to achieve a controlled and predictable outcome whilst reporting on project status.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Embedded scalable software for overhead power distribution protection equipment.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Played a pivotal role in the involvement of Advanced Controller systems (ADVC); the latest protection relay / switchgear controller for the Nu-Lec  built on embedded Linux with MTD Flash RAM file system, with Menu Driven Operator Control, Electrical Switching Application Suite, and Windows based UI.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Led full test management strategy, testing products to ensure they interface directly within distribution automation and SCADA systems, utilising embedded protocols and integral communications capability.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Automated test harnesses development: streamlined, automatic regression testing for multiple feature subsystems. Reduced number of production bugs.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Programmed with Linux Kernel Programming, Object Oriented Design, C++ programming and , Worked with GNU open source. Eclipse IDE. Subversion SCCS and Jenkins/Hudson continuous integration.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Built Access & Excel databases with SharePoint used for business modelling, costing and workflow.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Researched and led opportunities to improve software design, coding and implementation of software, and successfully implemented sophisticated software algorithms into products.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Incorporated latest design features including RTU (remote telecontrol unit) functionality, data logging,  remote control, advanced protection logic, user friendly LCD and other unique features.</p>
+                                                  </li>
+                                                  <li>
+                                                    <p>Maintained clear and direct communication with Software Developers, System Architect, Software Testers, Product Managers, R&D Manager, Project Managers, and Business Analysts.</p>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                            <h1>CSS + HTML only Accordion Element</h1>
+<ul>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Languages Used</h2>
+    <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>How it Works</h2>
+    <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Points of Interest</h2>
+    <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+  </li>
+</ul>
+<h2>Accordion</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<div class="container">
+<div class="accordion">
+<div>
+            <input id="ac-1" name="accordion-1" type="checkbox" />
+            <label for="ac-1">About</label>
+<div class="article ac-small">
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+</div>
+</div>
+<div>
+            <input id="ac-2" name="accordion-1" type="checkbox" />
+            <label for="ac-2">Resume</label>
+<div class="article ac-medium">
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi...
+</div>
+</div>
+<div>
+            <input id="ac-3" name="accordion-1" type="checkbox" />
+            <label for="ac-3">Portfolio</label>
+<div class="article ac-large">
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis...
+</div>
+</div>
+<div>
+            <input id="ac-4" name="accordion-1" type="checkbox" />
+            <label for="ac-4">Contact</label>
+<div class="article ac-large">
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci...
+</div>
+</div>
+</div>
+</div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    2000 &ndash; 2007
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    RSA Security (EMC Group)
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Senior Software Engineer
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Qld
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    RSA Security provides a range of solutions for management of information security with a portfolio that includes identity & access management, secure mobile & remote access, secure enterprise access and secure transactions, and over 1200 staff globally.
+                                                </p>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>Company Overview</h3>
+                                                <p>
+                                                  RSA Security provides a range of solutions for management of information security with a portfolio that includes identity & access management, secure mobile & remote access, secure enterprise access and secure transactions, and over 1200 staff globally.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Roles & Responsibilities</h2>
+
+                                                <p>Developed PKI (Public Key Infrastructure)-enabled security applications across a range of products, including mobile communications devices, web browsers, networking equipment, and e-business/commerce.</p>
+
+                                                <p>Set project plans and insured projects were delivered against budget and schedule.</p>
+
+                                                <p>Focused on opportunities to better integrate with the development environment.</p>
+
+                                                <p>Developed in: GNU, Visual Studio, Metroworks Codewarrior, designed and implemented cross-platform build and test framework incorporating Shell/Perl/make/tinderbox, and worked in Unix (Solaris, HP-UX, AIX), Linux, Windows(95-XP), PDA platforms (Win/CE, vxworks, epoc/symbian).</p>
+
+                                                <p>Built multi-threaded applications to demonstrate the development toolkits whilst ensuring cross-functional support for ARM, PowerPC, Itanium/2, Ultra/Sparc, and HP’s PA-RISC, x86 technology.</p>
+
+                                                <p>Ensured Cryptographic libraries met industry standard protocols such as SSL, WTLS, S/MIME and IPSEC, and Public-Key Cryptography Standards (PKCS #1,3,6,7,8,10 and 11).</p>
+
+                                                <p>Embedded a robust Test Management Plan in an Agile Environment; analysing and creating formal documentation – including project test plans, test strategy and reports.</p>
+
+                                                <p>Reduced regression cycle times through elimination of errors, automating manual tests, and improved quality management (QA/QC) for requirements Functionality and Traceability.</p>
+                                                <p>Reported to both the Australian R&D Manager and General Manager on a project basis, and direct line to the Technical Directors on the design and build of cutting-edge security and remote access applications.</p>
+
+                                              </div>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    1994 &ndash; 2000
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Software Projects Engineer
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Foxboro (Siebe plc / Invensys plc / Schneider)
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Aus
+                                                </div>
+                                                <div class="c-work__location">
+                                                    London, UK
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Foxboro is a leader in automated control solutions and pioneered the acclaimed Intelligent Automation Series, the world’s first open industrial system (OIS) designed to meet the total process automation, measurement and real-time information requirements of plants.
+                                                </p>
+                                                <div class="o-grid">
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>Kowtoon Rail System</li>
+                                                      <li>Voice control</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>comms based</li>
+                                                      <li>dfasd  adfsdasf  asdf asdf adf a</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Company Overview
+                                                </h3>
+                                                <p>
+                                                  Foxboro is a leader in automated control solutions and pioneered the acclaimed Intelligent Automation Series, the world’s first open industrial system (OIS) designed to meet the total process automation, measurement and real-time information requirements of plants.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Roles & Responsibilities</h2>
+                                                <ul>
+                                                  <li>Provided software programmatic and technical leadership for sustainment and customer deployment of automated control solutions for both the Australian and International market.</li>
+
+                                                  <li>Led engineering efforts in support of existing baseline development, software issue resolution, software enhancements, and respond to dynamic hardware compatibility list changes.</li>
+
+                                                  <li>Designed, implemented, and completed customer acceptance testing of Lineside Telephone Network and Train Radio System incl. SCADA & PABX with multi-operator GUI for Kowloon Canton Rail Corp Hong Kong; a 4 year project for software design and system installation of passenger information systems.</li>
+
+                                                  <li>Managed the Configuration of customer electrical substation network into SCADA system including software modifications and onsite commissioning of system.</li>
+
+                                                  <li>Seconded for one year on Foxboro UK arm to work on a rail track project, attending customer meetings to draft requirements and agree functionality and system prototypes and project milestones for a Network Management system (NMS) as part of an upgrade of Railtrack’s West Coast Main Line.</li>
+
+                                                  <li>Led design code modifications on the standard SCADA product modifications through C++.</li>
+
+                                                  <li>Built Unix OS on master stations, developing shell scripts to automate, load and configured the SCADA system,</li>
+
+                                                  <li>Added value through participation in peer code reviews and maximinsed use of software engineering tools such as configuration management systems, build processes, and debuggers in the SDLC process.</li>
+
+                                                </ul>
+                                              </div>
+                                            </div> <!-- panel -->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <!-- Try some alternative layout for Foxboro time. -->
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    1999
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Software Projects Engineer
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Foxboro Great Britian Pty Ltd (Siebe plc / Invensys plc / Schneider)
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    London, UK
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Electrical Power control system as part of upgrade of Railtrack’s West Coast Main Line (London to Edinburgh)
+                                                </p>
+                                                <div class="o-grid">
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>GIS based representation of the rail network</li>
+                                                      <li>Automated switching system</li>
+                                                      <li>Look ahead facility to determine any conflicts or line conditions that could result in unsafe control actions</li>
+                                                      <li>Asset Management</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>Real time SCADA system interface integration</li>
+                                                      <li>Topological based connectivity services</li>
+                                                      <li>Study mode (off line) to create switching schedules and verify safe practices</li>
+                                                      <li>Full alarm and event system</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Company Overview
+                                                </h3>
+                                                <p>
+                                                  Foxboro is a leader in automated control solutions and pioneered the acclaimed Intelligent Automation Series, the world’s first open industrial system (OIS) designed to meet the total process automation, measurement and real-time information requirements of plants.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Project Overview
+                                                </h3>
+                                                <p>
+                                                  A Network Management system (NMS) was implemented across two control centres – Rugby and Crewe.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Responsibilities</h2>
+                                                <ul>
+                                                  <li>Initial mapping of functions from the Particular Specification to the Functional Specification and High Level Design</li>
+                                                  <li>Consultation with Railtrack (client) personnel for design of prototype system.</li>
+                                                  <li>Implementation and demonstration of the prototype system to Railtrack for confirmation of functionality</li>
+                                                  <li>Development of interface software between the major subsystems, comprising
+                                                    <ul>
+                                                      <li>dual networks with redundant clients and servers</li>
+                                                      <li>real time field data acquisition from RTUs to a full SCADA system</li>
+                                                      <li>Interface through to a Network Management system</li>
+                                                      <li>topological based connectivity display</li>
+                                                      <li>Controls, tagging, operator notes, etc, associated with manual and automated telemetered switching actions</li>
+                                                    </ul>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div> <!-- panel -->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    1994 &ndash; 2000
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Software Projects Engineer
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Foxboro (Siebe plc / Invensys plc / Schneider)
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Australia
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Integrated Control & Communications System (ICCS) for Kowloon Canton Railway Corporation (KCRC)
+                                                </p>
+                                                <div class="o-grid">
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>GIS based representation of the rail network</li>
+                                                      <li>Automated switching system</li>
+                                                      <li>Look ahead facility to determine any conflicts or line conditions that could result in unsafe control actions</li>
+                                                      <li>Asset Management</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="o-grid__col-md-6">
+                                                    <ul>
+                                                      <li>Real time SCADA system interface integration</li>
+                                                      <li>Topological based connectivity services</li>
+                                                      <li>Study mode (off line) to create switching schedules and verify safe practices</li>
+                                                      <li>Full alarm and event system</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Company Overview
+                                                </h3>
+                                                <p>
+                                                  Foxboro is a leader in automated control solutions and pioneered the acclaimed Intelligent Automation Series, the world’s first open industrial system (OIS) designed to meet the total process automation, measurement and real-time information requirements of plants.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Project Overview
+                                                </h3>
+                                                <p>
+                                                  KCRC operates the heavy rail transit system from Kowloon Station in Hong Kong to LoWu Station near the China border. The network covers 13 railway stations along a 34km rail system which carried some 500,000 passengers and 37000 tonnes of freight each day. The ICCS consists of the following major subsystems:
+                                                  <ul>
+                                                    <li>Train Control System</li>
+                                                    <li>Power Control System</li>
+                                                    <li>Passenger Information System</li>
+                                                    <li>Long Line Public Address System</li>
+                                                    <li>Lineside Telephone Network and Train Radio System</li>
+                                                  </ul>
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Responsibilities</h2>
+                                                <p>
+                                                  Design, implementation, and customer acceptance testing of the Lineside Telephone Network and Train Radio System, which consisted of the following components:
+                                                </p>
+                                                <ul>
+                                                  <li>Voice line switching control between operator handsets and lineside phones, direct lines and emergency services</li>
+                                                  <li>Multi-operator X11 graphical interface (mouse-driven )</li>
+                                                  <li>Standard telephone PABX functionality, such as automatic call routing, on-hold, call transfer, and conferencing features </li>
+                                                  <li>Full SCADA recording and reporting capability</li>
+                                                  <li>Eventing of all call transitions (ie ringing in, answer, hold, hang up, etc).</li>
+                                                  <li>Alarming of phone network abnormalities</li>
+                                                  <li>Full communications statistical recording and graphic reporting</li>
+                                                  <li>Automatic failover to a redundant backup system, maintaining all calls in progress within a maximum of two seconds</li>
+                                                  <li>Diagnostic software tracing and logging.</li>
+                                                </ul>
+                                              </div>
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Project Overview
+                                                </h3>
+                                                <p>
+                                                  Electrical Power Control systems for Powerlink’s Queensland substations.
+                                        The control system consisted of SCADA masterstations (Solaris workstations) linked to a fibre optic- connected RTU network.
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Responsibilities</h2>
+                                                <p>
+                                                  Integration of the complete system which required:
+                                                </p>
+                                                <ul>
+                                                  <li>Build Unix OS on master stations – developing shell scripts to automate </li>
+                                                  <li>Load and configure the SCADA system</li>
+                                                  <li>Power Network Database design and automatic generation scripts for masterstation and RTU</li>
+                                                  <li>Consultation with the customer to design GUI layout and navigation</li>
+                                                  <li>Develop relay switching code logic for RTU based control</li>
+                                                  <li>Specific design code modifications on the standard SCADA product modifications were done with C++</li>
+                                                  <li>On-site installation and commissioning.</li>
+                                                </ul>
+                                              </div>
+                                            </div> <!-- panel -->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    1993
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    ABB SIGNAL PTY LTD, UK
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Software Design Engineer
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Plymouth, UK
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                  System to insulate track signaling equipment from noise interference – British Rail South East Network
+                                                </p>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Project Overview
+                                                </h3>
+                                                <p>
+                                                  The existing South East Network (British Rail) locomotives used AC traction motors, which generate noise harmonics that interfere with the existing track signaling equipment. A fail-safe monitor was designed to detect offensive frequencies and insulate the signaling equipment from the interference.
+                                                  The interference signal-detection system consisted of custom-built analogue filters coupled with a Motorola DSP56000-based system and associated fail-safe interfaces.
+                                                </p>
+
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Responsibilities</h2>
+                                                <ul>
+                                                  <li>Research the appropriate digital signal processing (DSP) techniques available to obtain the optimum filtering method for real-time response and selectivity</li>
+                                                  <li>Simulate the filter design to verify correct operation</li>
+                                                  <li>Setup hardware and software development environment</li>
+                                                  <li>Design and code all DSP software</li>
+                                                  <li>Develop, for testing and demonstrational purposes, a PC based front end program to record and graphically display the real-time output of the DSP Interference Software</li>
+                                                  <li>Write and publish all the appropriate concept and design specifications</li>
+                                                </ul>
+                                              </div>
+                                            </div> <!-- panel -->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5 dvt">
+                                                <div class="c-work__timeframe">
+                                                    1991 &ndash; 1993
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    ABB SIGNAL PTY LTD (Division of ASEA BROWN BOVERI
+	Transportation)
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Software Team Leader
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Brisbane, Australia
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Safety critical interface between train axle counting equipment and computer-based interlocking system
+                                                </p>
+                                            </div>
+                                            <div class="panel">
+                                              <div class="o-grid__col-md-12 company-overview">
+                                                <h3>
+                                                  Project Overview
+                                                </h3>
+                                                <p>
+                                                  This safety critical system is solely responsible for determining train occupancy of the rail track between axle counters located at remote stations. The information from the axle counters is passed over a SDLC telemetry link to the computer based interlocking system. Therefore all communications and data calculations are conducted in a fail safe manner by the Axle Counting Interface (ACI) board.
+                                                </p>
+                                                <p>
+The hardware used by this system is the SEL EAK 30 Axle Counters and the General Railway Signals (GRS) Vital Processor Interlocking (VPI). The interface board is Intel 80186 based with the standard Intel 86 family of support peripherals such as the 8259 PIC, 82530 synchronous comms chip.
+
+                                                </p>
+                                                <p>
+The ACI system was implemented with two independent programs running on separate non-vital hardware platforms (ACI boards). These programs use both numerical assurance and dual redundancy techniques for safety critical software.
+
+                                                </p>
+                                              </div>
+                                              <div class="o-grid__col-md-12">
+                                                <h2>Responsibilities</h2>
+                                                <ul>
+                                                  <li>Undertake preliminary research to determine the communications protocols to interface to the existing system and document these protocols for use with program development.</li>
+                            <li>Set up the development system, which included gathering the necessary development tools, namely, in-circuit emulators, test rigs, and the compiling and version control environments.</li>
+                            <li>Design the system operation and write the System Design Specification (SDS) for two independent teams of programmers in accordance with the Australian and IEEE standards.</li>
+                            <li>Design and coding of various safety critical software modules.</li>
+                            <li>Prepare and deliver a presentation of the system design concept for client acceptance of system functionality.</li>
+                            <li>Management of team of software design engineers including the assignment of work tasks and coordination of software development, integration and testing.</li>
+                            <li>Perform Hazards Analysis and Operational studies to develop a list of credible hazards. From this a Fault Tree Analysis was undertaken on the design and code to ensure that no system (operational) or component failure could cause a hazardous situation.</li>
+                            <li>Liaise with Safety Auditor regarding the System Design Specification, Detailed Design Specification and Hazards Analysis.</li>
+                            <li>Complete site installation and commissioning.</li>
+
+                                                </ul>
+                                              </div>
+                                            </div> <!-- panel -->
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                  <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                  <div class="o-content">
+                                    <div class="o-grid">
+                                      <div class="o-grid__col-md-5 dvt">
+                                        <div class="c-work__timeframe">
+                                          1989 &ndash; 1991
+                                        </div>
+                                        <h3 class="c-work__heading">
+                                          Stallion Technologies (formerly Anvil Designs)
+                                        </h3>
+                                        <h4 class="c-work__title">
+                                          Hardware Design Engineer
+                                        </h4>
+                                        <div class="c-work__location">
+                                          Brisbane, Australia
+                                        </div>
+                                      </div>
+                                      <div class="o-grid__col-md-7">
+                                        <p>
+                                          Safety critical interface between train axle counting equipment and computer-based interlocking system
+                                        </p>
+                                      </div>
+                                      <div class="panel">
+                                        <div class="o-grid__col-md-12 company-overview">
+                                          <h3>
+                                            Company Overview
+                                          </h3>
+                                          <p>
+                                            Stallion’s product range includes a variety of network access servers that provide shared Internet access and remote access, and a range of multiport serial I/O adapters that deliver high-speed serial connectivity.
+                                          </p>
+                                        </div>
+                                        <div class="o-grid__col-md-12">
+                                          <h2>Responsibilities</h2>
+                                          <ul>
+                                            <li>Design and Development of Intelligent Multiport boards to suit ISA,EISA, and Microchannel Architecture computers.</li>
+                                            <li>Intel 80C186</li>
+                                            <li>Intel 8259 Peripheral Interrupt Controller (PIC)</li>
+                                            <li>Intel 82530 SDLC comms UART</li>
+                                            <li>Asynchronous UARTs, DMA and DRAM Controllers.</li>
+                                            <li>Write Diagnostic code to test the functionality and hardware of intelligent multiport boards for Personnel Computers. This involves slave code, downloaded from the PC , performing the tests on the adapter board. This slave code communicates with the host code running on the PC. The host code controls the slave code and displays the test results.</li>
+                                            <li>Complete design of the PCB from schematic capture and PCB routing through to the Gerber photo plot generation necessary for PCB Manufacture. I have an in depth knowledge of PCB CAD packages PCAD and Protel. I have also used Mechanical drawing packages to aid in manufacturing specification information for the PCBs and product packaging requirements.</li>
+                                          </ul>
+                                        </div>
+                                      </div> <!-- panel -->
+                                    </div> <!-- /o-grid -->
+                                  </div> <!-- /o-content -->
+                                </div> <!-- /c-timeline__item -->
+
+
+                                <div class="c-timeline__item">
+                                  <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                  <div class="o-content">
+                                    <div class="o-grid">
+                                      <div class="o-grid__col-md-5 dvt">
+                                        <div class="c-work__timeframe">
+                                          1984 &ndash; 1987
+                                        </div>
+                                        <h3 class="c-work__heading">
+                                          Kent Instruments Aust Pty Ltd (A member of the ABB Group)
+                                        </h3>
+                                        <h4 class="c-work__title">
+                                          Electronics Technician
+                                        </h4>
+                                        <div class="c-work__location">
+                                          Brisbane, Australia
+                                        </div>
+                                      </div>
+                                      <div class="o-grid__col-md-7">
+                                        <p>
+                                          Repair and Commission Analogue and Digital Instrumentation associated with the manufacturing, mining, and utilities businesses.
+                                        </p>
+                                      </div>
+                                      <div class="panel">
+                                        <div class="o-grid__col-md-12">
+                                          <h2>Equipment</h2>
+                                          <ul>
+                                            <li>Recorders, Controllers, Gas and Water Analysers, and Flow and Level measuring devices - both analogue and digital/microprocessor based. Also maintenance and repair of pneumatic and mechanical instrumentation.</li>
+                                            <li>Kent K90 System (Computer Based Automatic Control System): </li>
+                                            <li>Components: DEC PDP-11 series processor and associated hardware.</li>
+                                            <li>Kent computer/plant interface hardware and software and telemetry system.</li>
+                                          </ul>
+                                        </div>
+                                      </div>  <!-- panel -->
+                                    </div>  <!-- /o-grid -->
+                                  </div> <!-- /o-content -->
+                                </div> <!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5">
+                                                <div class="c-work__timeframe">
+                                                    2010 &ndash; 2013
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    Dreamland Creative
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Front-end Designer
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    New York, NY
+                                                </div>
+                                            </div>
+                                            <div class="o-grid__col-md-7">
+                                                <p>
+                                                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.
+                                                </p>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                            </div><!-- /c-timeline -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ########### EDUCATION ########## -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Education
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Lazy isn&#39;t in my vocabulary.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  u-pt-0">
+
+                            <div class="o-content">
+                                <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
+                                    <div class="c-timeline__end  t-border-color"></div>
+
+                                    <div class="c-timeline__item">
+                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                        <div class="o-content">
+                                            <div class="o-grid">
+                                                <div class="o-grid__col-md-5">
+                                                    <div class="c-work__timeframe">
+                                                        1989
+                                                    </div>
+                                                    <h3 class="c-work__heading">
+                                                        Queensland University of Technology
+                                                    </h3>
+                                                    <h4 class="c-work__title">
+                                                        Bachelor of Engineering - Electronics (Honours).
+                                                    </h4>
+                                                    <div class="c-work__location">
+                                                        Brisbane, Australia
+                                                    </div>
+                                                </div>
+                                                <div class="o-grid__col-md-7">
+                                                  <div class="c-work__timeframe"></div>
+                                                  <h2>
+                                                    Queensland Electricity Commision Prize
+                                                  </h2>
+                                                  <p>
+                                                    Awarded for highest academic achievement by a Bachelor of Engineering student in the fields of Instrumentation and Control.
+                                                  </p>
+                                                </div>
+                                            </div><!-- /o-grid -->
+                                        </div><!-- /o-content -->
+                                    </div><!-- /c-timeline__item -->
+
+                                    <div class="c-timeline__item">
+                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                        <div class="o-content">
+                                            <div class="o-grid">
+                                                <div class="o-grid__col-md-5">
+                                                    <div class="c-work__timeframe">
+                                                        1983
+                                                    </div>
+                                                    <h3 class="c-work__heading">
+                                                        Queensland Institute of Technology
+                                                    </h3>
+                                                    <h4 class="c-work__title">
+                                                        Associate Diploma of Electrical Engineering
+                                                    </h4>
+                                                    <p>(Electronics And Industrial Systems Strand)</p>
+                                                    <div class="c-work__location">
+                                                        Brisbane, Australia
+                                                    </div>
+                                                </div>
+                                                <div class="o-grid__col-md-7">
+                                                    <h2>
+                                                      Leeds and Northrup Prize (Foxboro an Invensys company)
+                                                    </h2>
+                                                    <p>
+                                                      Awarded for highest academic achievement in the strand of Electronics and Industrial Systems.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-grid -->
+                                        </div><!-- /o-content -->
+                                    </div><!-- /c-timeline__item -->
+
+                                    <div class="c-timeline__item">
+                                        <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                        <div class="o-content">
+                                            <div class="o-grid">
+                                                <div class="o-grid__col-md-5">
+                                                    <div class="c-work__timeframe">
+                                                        1981
+                                                    </div>
+                                                    <h3 class="c-work__heading">
+                                                        Kelvin Grove State High School
+                                                    </h3>
+                                                    <div class="c-work__location">
+                                                        Brisbane, Australia
+                                                    </div>
+                                                </div>
+                                                <div class="o-grid__col-md-7">
+                                                    <p></p>
+                                                </div>
+                                            </div><!-- /o-grid -->
+                                        </div><!-- /o-content -->
+                                    </div><!-- /c-timeline__item -->
+
+                                </div><!-- /c-timeline -->
+                            </div><!-- /o-content -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ########### PROFILES ########### -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Profiles
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Busy as usual.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="http://themeforest.net/user/ruventhemes/portfolio" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-envira"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        Themeforest
+                                                    </h3>
+                                                    <p>
+                                                        An overview of the themes and templates that I sell.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="https://github.com/hatra-e/" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-github-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        GitHub
+                                                    </h3>
+                                                    <p>
+                                                        All my open source projects for you analyze.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="http://wordpress.com" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-medium"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        Medium
+                                                    </h3>
+                                                    <p>
+                                                        Yes. I'm also a blogger and here you find my writings.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="https://dribbble.com" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-dribbble"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        Dribbble
+                                                    </h3>
+                                                    <p>
+                                                        Whenever a design is finalized, it lands right here.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="https://www.flickr.com" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-flickr"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        Flickr
+                                                    </h3>
+                                                    <p>
+                                                        A selection of photos I shot throughout the years.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <a href="http://www.deviantart.com" target="_blank" class="t-link-container">
+                                            <div class="o-media  o-media--block">
+                                                <div class="o-media__figure">
+                                                    <div class="c-profile__icon">
+                                                        <i class="fa  fa-lg  fa-deviantart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="o-media__body  o-content__body">
+                                                    <h3 class="t-link-container__item">
+                                                        DeviantArt
+                                                    </h3>
+                                                    <p>
+                                                        A place for my sketches and drawings.
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-media -->
+                                        </a><!-- /t-link-container -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ############ HEADER ############ -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Awards
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Happy times!
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>Unicorn Developer Award 2016</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>Website of the Year Award 2015</h3>
+                                            <p>
+                                                Praesent dapibus dolor sit amet, justo eget porttitor mauris sit amet. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <hr class="c-deco-line  t-primary-color-line" />
+                                        <div class="o-content__body">
+                                            <h3>1st Place at CSShacker Conference</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, justo eget porttitor mauris sit amet felis. Neque id cursus faucibus.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ########### PORTFOLIO ########## -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Portfolio
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Here it gets interesting.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  o-section__full-bottom-space">
+
+                            <div class="o-grid  o-grid--gallery">
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/1_full.jpg" data-lightbox-hidpi="" title="Musée du Louvre" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/1_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                Musée du Louvre
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/2_full.jpg" data-lightbox-hidpi="" title="Tunnel Effect" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/2_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                Tunnel Effect
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/3_full.jpg" data-lightbox-hidpi="" title="New York, New York" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/3_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                New York, New York
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/4_full.jpg" data-lightbox-hidpi="" title="Sky High" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/4_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                Sky High
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/5_full.jpg" data-lightbox-hidpi="" title="The Eiffel Tower" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/5_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                The Eiffel Tower
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="assets/images/portfolio/6_full.jpg" data-lightbox-hidpi="" title="Reaching the Clouds" data-lightbox-gallery="portfolio">
+                                        <img src="assets/images/portfolio/6_thumb.jpg" alt="">
+                                        <div class="c-image-overlay__content">
+                                            <h3>
+                                                Reaching the Clouds
+                                            </h3>
+                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                            <p>
+                                                Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ############ CLIENTS ########### -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  ">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Interests
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Happy people.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                            <ul class="c-clients  o-content">
+                              <li class="interest-tag"> <!-- surfer -->
+                                  <a href="http://example.com" target="_blank">
+                                      <img src="assets/images/clients/surfer.png" alt="">
+                                  </a>
+                                  <p class="interest-tag">surfing</p>
+                              </li>
+                                <li class="interest-tag"> <!-- plane / travel -->
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNjEyIDYxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjEyIDYxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik02MTIsMTk1LjcyMmMwLDEwNS44Ny01MTAuMzc0LDIyMi43MjctNTQ5LjAyLDIyMi43MjdjLTIxLjY2NywwLTQ2LjI1LTQuOTk0LTQ2LjI1LTI0Ljk2OSAgIGMwLTYuNjc0LDcuNzAzLTE2LjMyLDIxLjIyLTI3Ljk0OWwtMC4wMTUsMC4wMDhMMi4xMDksMzAxLjg4M2MtNC44NTEtOC42MTgtMS4wMDUtMTkuNTM2LDguMTc1LTIzLjIxMmw2LjE1Ny0yLjQ2NSAgIGMxMS4xNTktNC40NjgsMjMuNzE4LTMuODAyLDM0LjM0MSwxLjgyMWw2NS4wMzksMzQuNDMyYzI1LjMyMy0xNS4wMiw1NC4wNDktMzAuNzQ2LDg0LjMyNi00Ni4yMjlMNzMuNDAyLDE4NC4wMDEgICBjLTEwLjAyNy02LjUwNi05LjkyLTIxLjIyLDAuMjAxLTI3LjU3OGwxMC4zNjgtNi41MTRjMTcuMjU2LTEwLjg0MSwzOC4yMzQtMTQuMDQzLDU3LjkzOC04Ljg0NmwyMTAuODUsNTUuNjE2ICAgYzY1Ljc0Mi0yNi4wOTQsMTI1LjE4MS00My45MDQsMTYwLjM2My00My45MDRjOS4zOTYsMCwxOC44MDYsMC4yNDksMjcuODg3LDAuODk4bC02My42NzUsMjguNzQ1bC0xLjUyNCwyMS40MThsOTguMjktNDUuMTgzICAgQzU5Ny42NjEsMTY0LjI3Miw2MTIsMTc0Ljc1OSw2MTIsMTk1LjcyMnogTTM1NS40OTIsMzc4LjQ3Nmw3OC42NDgsODkuMzQ0YzQuNzkzLDUuNDQ1LDEyLjU5OSw3LjA4NCwxOS4xNzYsNC4wMjdsMTAuNTMzLTQuODk2ICAgYzE5LjIwOC04LjkyOCwzMC41MjEtMjkuMTcyLDI4LjA2MS01MC4yMDlsLTkuODQ2LTg0LjE4NmMtMC42MS01LjIwOS01Ljg5Ni04LjUwNi0xMC44NDMtNi43NjRsLTExMi4zMDgsMzkuNTYyICAgQzM1My40NDcsMzY3LjI4MSwzNTEuNjYxLDM3NC4xMjUsMzU1LjQ5MiwzNzguNDc2eiIgZmlsbD0iIzgwODA4MCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                    </a>
+                                    <p class="interest-tag">travel</p>
+                                </li>
+                                <li class="interest-tag"> <!-- combi surf trip -->
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAxIDUxMi4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDEgNTEyLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTMyMS4wMzksMTc5LjAzM0gxOTAuOTYzYy00LjE0NSwwLTcuNTA0LDMuMzU5LTcuNTA0LDcuNTA0djY4LjIyMmMwLDQuMTQ0LDMuMzU5LDcuNTA0LDcuNTA0LDcuNTA0aDEzMC4wNzYgICAgYzQuMTQ1LDAsNy41MDQtMy4zNiw3LjUwNC03LjUwNHYtNjguMjIyQzMyOC41NDMsMTgyLjM5MiwzMjUuMTg0LDE3OS4wMzMsMzIxLjAzOSwxNzkuMDMzeiBNMzEzLjUzNCwyNDcuMjU1SDE5OC40Njh2LTUzLjIxMyAgICBoMTE1LjA2N1YyNDcuMjU1eiIgZmlsbD0iIzgwODA4MCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE1NS45NDMsMTc5LjAzM0g5Mi4wNjJjLTI3LjE4MSwwLTQ5LjI5NSwyMi4xMTMtNDkuMjk1LDQ5LjI5NXYyNi40MzFjMCw0LjE0NCwzLjM1OSw3LjUwNCw3LjUwNCw3LjUwNGgxMDUuNjcgICAgYzQuMTQ1LDAsNy41MDUtMy4zNiw3LjUwNS03LjUwNHYtNjguMjIyQzE2My40NDcsMTgyLjM5MywxNjAuMDg4LDE3OS4wMzMsMTU1Ljk0MywxNzkuMDMzeiBNMTQ4LjQzOCwyNDcuMjU1SDU3Ljc3NnYtMTguOTI3ICAgIGMwLTE4LjkwNiwxNS4zOC0zNC4yODYsMzQuMjg2LTM0LjI4Nmg1Ni4zNzdWMjQ3LjI1NXoiIGZpbGw9IiM4MDgwODAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MTkuOTM4LDE3OS4wMzNoLTYzLjg4MWMtNC4xNDUsMC03LjUwNCwzLjM2LTcuNTA0LDcuNTA0djY4LjIyMmMwLDQuMTQ0LDMuMzU5LDcuNTA0LDcuNTA0LDcuNTA0aDEwNS42NzIgICAgYzQuMTQ1LDAsNy41MDQtMy4zNiw3LjUwNC03LjUwNHYtMjYuNDMxQzQ2OS4yMzMsMjAxLjE0Niw0NDcuMTE5LDE3OS4wMzMsNDE5LjkzOCwxNzkuMDMzeiBNNDU0LjIyNSwyNDcuMjU1aC05MC42NjJ2LTUzLjIxMyAgICBoNTYuMzc2YzE4LjkwNiwwLDM0LjI4NiwxNS4zOCwzNC4yODYsMzQuMjg2VjI0Ny4yNTV6IiBmaWxsPSIjODA4MDgwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzYxLjQyNiwzNTYuNzAxYy0xNS41MTQsMC0yOC4xMzQsMTIuNjItMjguMTM0LDI4LjEzNHMxMi42MiwyOC4xMzQsMjguMTM0LDI4LjEzNHMyOC4xMzQtMTIuNjIsMjguMTM0LTI4LjEzNCAgICBTMzc2Ljk0LDM1Ni43MDEsMzYxLjQyNiwzNTYuNzAxeiBNMzYxLjQyNiwzOTcuOTZjLTcuMjM3LDAtMTMuMTI2LTUuODg4LTEzLjEyNi0xMy4xMjZjMC03LjIzNyw1Ljg4OC0xMy4xMjYsMTMuMTI2LTEzLjEyNiAgICBjNy4yMzcsMCwxMy4xMjYsNS44ODcsMTMuMTI2LDEzLjEyNlMzNjguNjY0LDM5Ny45NiwzNjEuNDI2LDM5Ny45NnoiIGZpbGw9IiM4MDgwODAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0xNDAuNiwzNTYuNzAxYy0xNS41MTMsMC0yOC4xMzMsMTIuNjItMjguMTMzLDI4LjEzNHMxMi42MiwyOC4xMzQsMjguMTMzLDI4LjEzNGMxNS41MTQsMCwyOC4xMzQtMTIuNjIsMjguMTM0LTI4LjEzNCAgICBTMTU2LjExMywzNTYuNzAxLDE0MC42LDM1Ni43MDF6IE0xNDAuNiwzOTcuOTZjLTcuMjM2LDAtMTMuMTI1LTUuODg4LTEzLjEyNS0xMy4xMjZjMC03LjIzNyw1Ljg4OC0xMy4xMjYsMTMuMTI1LTEzLjEyNiAgICBjNy4yMzcsMCwxMy4xMjYsNS44ODcsMTMuMTI2LDEzLjEyNlMxNDcuODM3LDM5Ny45NiwxNDAuNiwzOTcuOTZ6IiBmaWxsPSIjODA4MDgwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzkwLjQ5NSwzMDEuNDM2aC0zNC40MzdjLTQuMTQ1LDAtNy41MDQsMy4zNi03LjUwNCw3LjUwNHMzLjM1OSw3LjUwNCw3LjUwNCw3LjUwNGgzNC40MzcgICAgYzQuMTQ1LDAsNy41MDQtMy4zNiw3LjUwNC03LjUwNFMzOTQuNjQxLDMwMS40MzYsMzkwLjQ5NSwzMDEuNDM2eiIgZmlsbD0iIzgwODA4MCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5OS4yNTIsMzUwLjAxNHYtNjcuNjM2di01NC4wNTFjMC00My43MzMtMzUuNTgtNzkuMzEyLTc5LjMxMi03OS4zMTJIMTk4LjQ2OHYtMTUuMDA5aDI0My42NDEgICAgYzQuMTQ1LDAsNy41MDQtMy4zNiw3LjUwNC03LjUwNGMwLTIzLjA4Ny0xOC43ODItNDEuODctNDEuODctNDEuODdoLTUyLjYyN2MtNC4xNDUsMC03LjUwNCwzLjM2LTcuNTA0LDcuNTA0ICAgIHMzLjM1OSw3LjUwNCw3LjUwNCw3LjUwNGg1Mi42MjdjMTIuMjA4LDAsMjIuNTM5LDguMTg3LDI1Ljc5NCwxOS4zNTdIMTk4LjQ2OFY5OS42NDFoMTI2LjYzMmM0LjE0NSwwLDcuNTA0LTMuMzYsNy41MDQtNy41MDQgICAgcy0zLjM1OS03LjUwNC03LjUwNC03LjUwNEgxOTguNDY4di0yLjUwMWMwLTQuMTQ1LTMuMzU5LTcuNTA0LTcuNTA0LTcuNTA0Yy00LjE0NSwwLTcuNTA0LDMuMzU5LTcuNTA0LDcuNTA0djIuNTAxaC0yMC4wMTIgICAgdi0yLjUwMWMwLTQuMTQ1LTMuMzU5LTcuNTA0LTcuNTA0LTcuNTA0Yy00LjE0NSwwLTcuNTA0LDMuMzU5LTcuNTA0LDcuNTA0djIuNTAxSDc0LjI0MWMtMjMuMDg4LDAtNDEuODcyLDE4Ljc4My00MS44NzIsNDEuODcgICAgYzAsNC4xNDQsMy4zNTksNy41MDQsNy41MDQsNy41MDRoMTA4LjU2NHYxNS4wMDlIOTIuMDYxYy00My43MzIsMC03OS4zMTIsMzUuNTgtNzkuMzEyLDc5LjMxMnY1NC4wNTF2NjcuNjM2ICAgIEM1LjM4MiwzNTIuMjQxLDAsMzU5LjA4NSwwLDM2Ny4xNjl2MTQuMjUyYzAsOS44ODIsOC4wNCwxNy45MjIsMTcuOTIyLDE3LjkyMmg0MC44MTZjOS41NzQsMCwxNy4zOTYtNy41NTIsMTcuODc1LTE3LjAxaDExLjUxICAgIGMtMC4wMzksMC44MjktMC4wNjMsMS42NjMtMC4wNjMsMi41MDFjMCwyOC45NzEsMjMuNTcsNTIuNTQsNTIuNTQsNTIuNTRjMjguOTcxLDAsNTIuNTQxLTIzLjU2OSw1Mi41NDEtNTIuNTQgICAgYzAtMC44MzktMC4wMjQtMS42NzItMC4wNjMtMi41MDFoNjQuMDg0YzQuMTQ1LDAsNy41MDQtMy4zNiw3LjUwNC03LjUwNHMtMy4zNTktNy41MDQtNy41MDQtNy41MDRoLTY3LjAxNiAgICBjLTAuMDYtMC4xNzEtMC4xMjctMC4zMzgtMC4xODktMC41MDhjLTAuMDA4LTAuMDIyLTAuMDE2LTAuMDQ0LTAuMDI0LTAuMDY2Yy03LjQ5OS0yMC40NDYtMjcuNTYyLTM0LjQ1NS00OS4zMzItMzQuNDU1ICAgIGMtMC4wMTEsMC0wLjAyMywwLTAuMDM0LDBjLTIyLjA3MiwwLjAwMS00Mi4yMTgsMTQuMTcyLTQ5LjUxMSwzNS4wMjhINzYuNjZ2LTAuMTU2YzAtOS43MTctOC4xNDItMTcuOTIxLTE3LjkyMS0xNy45MjFIMjcuNzU3ICAgIHYtNTkuMzY0YzAsMCw1OC45MjgsMCw1OC45MywwYzQuMDE3LDAsNy41MDQtMy40NTQsNy41MDQtNy41MDRjMC00LjE0NC0zLjM1OS03LjUwNC03LjUwNC03LjUwNGgtNTguOTN2LTQ2LjU0NyAgICBjMC0zNS40NTgsMjguODQ2LTY0LjMwMyw2NC4zMDMtNjQuMzAzaDMyNy44Nzh2MC4wMDFjMzUuNDU4LDAsNjQuMzAzLDI4Ljg0Nyw2NC4zMDMsNjQuMzAzdjQ2LjU0N0gxMTYuNzA2ICAgIGMtNC4xNDUsMC03LjUwNCwzLjM2LTcuNTA0LDcuNTA0czMuMzU5LDcuNTA0LDcuNTA0LDcuNTA0aDM2Ny41MzZ2NTkuMzY0aC0zMC45OGMtOC4wMjksMC0xNC44NDIsNS4zMDctMTcuMTE0LDEyLjU5OCAgICBjLTAuMTc1LDAuNTYxLTAuMzIzLDEuMTM0LTAuNDQyLDEuNzE2Yy0wLjIzOSwxLjE2Ni0wLjM2NSwyLjM3Mi0wLjM2NSwzLjYwN3YwLjE1NmgtMjQuMzY4ICAgIGMtNi43MDYtMTkuMTczLTIzLjc1LTMyLjY0LTQ0LjAwNC0zNC43MzVjLTAuMTQxLTAuMDE1LTAuMjgyLTAuMDI3LTAuNDIzLTAuMDQxYy0yMS42NzktMi4xMDItNDMuMDA0LDkuNzEtNTIuNDM2LDI5LjM3NiAgICBjLTAuODQyLDEuNzU3LTEuNTg3LDMuNTYtMi4yMyw1LjM5OWgtMjQuNzAyYy00LjE0NSwwLTcuNTA0LDMuMzYtNy41MDQsNy41MDRzMy4zNTksNy41MDQsNy41MDQsNy41MDRoMjEuNzczICAgIGMtMC4wMzksMC44MjktMC4wNjMsMS42NjMtMC4wNjMsMi41MDFjMCwyOC45NzEsMjMuNTcsNTIuNTQsNTIuNTQsNTIuNTRzNTIuNTQtMjMuNTY5LDUyLjU0LTUyLjU0ICAgIGMwLTAuODM5LTAuMDI0LTEuNjcyLTAuMDYzLTIuNTAxaDIxLjQ4NGMwLjQ3OSw5LjQ1OCw4LjMwMiwxNy4wMSwxNy44NzUsMTcuMDFoNDAuODE2YzkuODgzLDAsMTcuOTIyLTguMDQsMTcuOTIyLTE3LjkyMnYtMTQuMjUyICAgIEM1MTIuMDAxLDM1OS4wODQsNTA2LjYxOSwzNTIuMjQsNDk5LjI1MiwzNTAuMDE0eiBNMTQwLjU1MSwzNDcuMzA0YzAuMDE3LDAsMC4wMzMtMC4wMDEsMC4wNS0wLjAwMSAgICBjMC4wMTMsMCwwLjAyNSwwLjAwMSwwLjAzOCwwLjAwMWMyMC4xODMsMCwzNy40NjMsMTcuMjk4LDM3LjQ5MywzNy40NzljMCwwLjAxNywwLDAuMDM0LDAsMC4wNTEgICAgYy0wLjAwMSwyMC42OTUtMTYuODM4LDM3LjUzMS0zNy41MzIsMzcuNTMxYy0yMC42OTUsMC0zNy41MzEtMTYuODM3LTM3LjUzMS0zNy41MzEgICAgQzEwMy4wNjksMzY0LjU2LDEyMC4yMzQsMzQ3LjMwNCwxNDAuNTUxLDM0Ny4zMDR6IE01OC43MzgsMzY0LjI1NmMxLjU4MSwwLDIuOTEzLDEuMzM3LDIuOTEzLDIuOTEzdjE0LjI1MiAgICBjMCwxLjYwNi0xLjMwNywyLjkxNC0yLjkxMywyLjkxNEgxNy45MjJjLTEuNjA2LDAtMi45MTQtMS4zMDctMi45MTQtMi45MTR2LTE0LjI1MmMwLTEuNjA2LDEuMzA4LTIuOTEzLDIuOTE0LTIuOTEzICAgIGMwLDAsMi4zMjUsMCwyLjMzLDBDMjAuMjUzLDM2NC4yNTYsNTguNjg1LDM2NC4yNTYsNTguNzM4LDM2NC4yNTZ6IE0xNDguNDM3LDExOC45OThINDguNDQ1ICAgIGMzLjI1NS0xMS4xNzIsMTMuNTg4LTE5LjM1NywyNS43OTYtMTkuMzU3aDc0LjE5NlYxMTguOTk4eiBNMTgzLjQ1OSwxNDkuMDE2aC0yMC4wMTJ2LTE1LjAwOWgyMC4wMTJWMTQ5LjAxNnogTTE4My40NTksMTE4Ljk5OCAgICBoLTIwLjAxMlY5OS42NDFoMjAuMDEyVjExOC45OTh6IE0zNjEuNDI2LDQyMi4zNjVjLTIwLjY5NSwwLTM3LjUzMS0xNi44MzctMzcuNTMxLTM3LjUzMWMwLTIwLjk3MiwxOC4zNzYtMzguNDk1LDM5LjM0OS0zNy40ODUgICAgYzE5LjU3NSwwLjk0NCwzNS43MTMsMTcuOTExLDM1LjcxMywzNy40ODVDMzk4Ljk1Nyw0MDUuNTI5LDM4Mi4xMiw0MjIuMzY1LDM2MS40MjYsNDIyLjM2NXogTTQ5Ni45OTEsMzgxLjQyMSAgICBjMCwxLjYwNi0xLjMwOCwyLjkxNC0yLjkxNCwyLjkxNGgtNDAuODE2Yy0xLjYwNiwwLTIuOTEzLTEuMzA3LTIuOTEzLTIuOTE0YzAsMCwwLTE0LjI0OCwwLTE0LjI1MiAgICBjMC0xLjU4NywxLjMyOC0yLjkxMywyLjkxMy0yLjkxM2MwLDAsMzguNDg0LDAsMzguNDg5LDBjMi4xNTIsMCw1LjI0LTAuMTEyLDUuMjQsMi45MTNWMzgxLjQyMXoiIGZpbGw9IiM4MDgwODAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                                    </a>
+                                    <p class="interest-tag">surf trips</p>
+                                </li>
+                                <li class="interest-tag"> <!-- house property -->
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDYwLjI5OCA0NjAuMjk3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjAuMjk4IDQ2MC4yOTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjE0OSwxMjAuOTM5TDY1Ljk4NiwyNTYuMjc0YzAsMC4xOTEtMC4wNDgsMC40NzItMC4xNDQsMC44NTVjLTAuMDk0LDAuMzgtMC4xNDQsMC42NTYtMC4xNDQsMC44NTJ2MTM3LjA0MSAgICBjMCw0Ljk0OCwxLjgwOSw5LjIzNiw1LjQyNiwxMi44NDdjMy42MTYsMy42MTMsNy44OTgsNS40MzEsMTIuODQ3LDUuNDMxaDEwOS42M1YzMDMuNjY0aDczLjA5N3YxMDkuNjRoMTA5LjYyOSAgICBjNC45NDgsMCw5LjIzNi0xLjgxNCwxMi44NDctNS40MzVjMy42MTctMy42MDcsNS40MzItNy44OTgsNS40MzItMTIuODQ3VjI1Ny45ODFjMC0wLjc2LTAuMTA0LTEuMzM0LTAuMjg4LTEuNzA3TDIzMC4xNDksMTIwLjkzOSAgICB6IiBmaWxsPSIjOTk5MTk5Ii8+CgkJPHBhdGggZD0iTTQ1Ny4xMjIsMjI1LjQzOEwzOTQuNiwxNzMuNDc2VjU2Ljk4OWMwLTIuNjYzLTAuODU2LTQuODUzLTIuNTc0LTYuNTY3Yy0xLjcwNC0xLjcxMi0zLjg5NC0yLjU2OC02LjU2My0yLjU2OGgtNTQuODE2ICAgIGMtMi42NjYsMC00Ljg1NSwwLjg1Ni02LjU3LDIuNTY4Yy0xLjcxMSwxLjcxNC0yLjU2NiwzLjkwNS0yLjU2Niw2LjU2N3Y1NS42NzNsLTY5LjY2Mi01OC4yNDUgICAgYy02LjA4NC00Ljk0OS0xMy4zMTgtNy40MjMtMjEuNjk0LTcuNDIzYy04LjM3NSwwLTE1LjYwOCwyLjQ3NC0yMS42OTgsNy40MjNMMy4xNzIsMjI1LjQzOGMtMS45MDMsMS41Mi0yLjk0NiwzLjU2Ni0zLjE0LDYuMTM2ICAgIGMtMC4xOTMsMi41NjgsMC40NzIsNC44MTEsMS45OTcsNi43MTNsMTcuNzAxLDIxLjEyOGMxLjUyNSwxLjcxMiwzLjUyMSwyLjc1OSw1Ljk5NiwzLjE0MmMyLjI4NSwwLjE5Miw0LjU3LTAuNDc2LDYuODU1LTEuOTk4ICAgIEwyMzAuMTQ5LDk1LjgxN2wxOTcuNTcsMTY0Ljc0MWMxLjUyNiwxLjMyOCwzLjUyMSwxLjk5MSw1Ljk5NiwxLjk5MWgwLjg1OGMyLjQ3MS0wLjM3Niw0LjQ2My0xLjQzLDUuOTk2LTMuMTM4bDE3LjcwMy0yMS4xMjUgICAgYzEuNTIyLTEuOTA2LDIuMTg5LTQuMTQ1LDEuOTkxLTYuNzE2QzQ2MC4wNjgsMjI5LjAwNyw0NTkuMDIxLDIyNi45NjEsNDU3LjEyMiwyMjUuNDM4eiIgZmlsbD0iIzk5OTE5OSIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                    </a>
+                                    <p class="interest-tag">property</p>
+                                </li>
+                                <!-- <li>
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="assets/images/clients/home.png" alt="">
+                                    </a>
+                                </li> -->
+                                <li class="interest-tag"> <!-- music note -->
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4yMTYgNDc3LjIxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjIxNiA0NzcuMjE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDUzLjg1OCwxMDUuMTE2di05MS42YzAtNC4zLTIuMS04LjQtNS41LTEwLjljLTMuNS0yLjUtOC0zLjMtMTIuMS0ybC0yNzIuOSw4Ni43Yy01LjYsMS44LTkuNCw3LTkuNCwxMi45djkxLjd2MC4xdjE3NS4zICAgYy0xNC4zLTkuOS0zMi42LTE1LjMtNTEuOC0xNS4zYy0yMC4zLDAtMzkuNiw2LjEtNTQuMywxNy4xYy0xNS44LDExLjktMjQuNSwyOC0yNC41LDQ1LjVzOC43LDMzLjYsMjQuNSw0NS41ICAgYzE0LjcsMTEsMzMuOSwxNy4xLDU0LjMsMTcuMXMzOS42LTYuMSw1NC4zLTE3LjFjMTUuOC0xMS45LDI0LjUtMjgsMjQuNS00NS41di0yMTIuOGwyNDUuOS03OC4ydjE1Ni42ICAgYy0xNC4zLTkuOS0zMi42LTE1LjMtNTEuOC0xNS4zYy0yMC4zLDAtMzkuNiw2LjEtNTQuMywxNy4xYy0xNS44LDExLjktMjQuNSwyOC0yNC41LDQ1LjVzOC43LDMzLjYsMjQuNSw0NS41ICAgYzE0LjcsMTEsMzMuOSwxNy4xLDU0LjMsMTcuMXMzOS42LTYuMSw1NC4zLTE3LjFjMTUuOC0xMS45LDI0LjUtMjgsMjQuNS00NS41di0yMjIuMyAgIEM0NTMuODU4LDEwNS4xMTYsNDUzLjg1OCwxMDUuMTE2LDQ1My44NTgsMTA1LjExNnogTTEwMi4xNTgsNDUwLjIxNmMtMjguMSwwLTUxLjgtMTYuMy01MS44LTM1LjZjMC0xOS4zLDIzLjctMzUuNiw1MS44LTM1LjYgICBzNTEuOCwxNi4zLDUxLjgsMzUuNkMxNTMuOTU4LDQzNC4wMTYsMTMwLjI1OCw0NTAuMjE2LDEwMi4xNTgsNDUwLjIxNnogTTE4MC45NTgsMTczLjQxNnYtNjMuNGwyNDUuOS03OC4xdjYzLjRMMTgwLjk1OCwxNzMuNDE2eiAgICBNMzc1LjE1OCwzNjMuMTE2Yy0yOC4xLDAtNTEuOC0xNi4zLTUxLjgtMzUuNmMwLTE5LjMsMjMuNy0zNS42LDUxLjgtMzUuNnM1MS44LDE2LjMsNTEuOCwzNS42ICAgQzQyNi44NTgsMzQ2LjgxNiw0MDMuMTU4LDM2My4xMTYsMzc1LjE1OCwzNjMuMTE2eiIgZmlsbD0iIzgwODA4MCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                    </a>
+                                    <p class="interest-tag">music</p>
+                                </li>
+                                <li class="interest-tag"> <!-- languages -->
+                                    <a href="http://example.com" target="_blank">
+                                        <img src="assets/images/clients/foreign-language.png" alt="">
+                                    </a>
+                                    <p class="interest-tag">languages</p>
+                                </li>
+                                <li class="interest-tag"> <!-- running man -->
+                                  <a href="http://example.com" target="_blank">
+                                    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMTQ5IDUxMi4xNDkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4xNDkgNTEyLjE0OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xKSI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTUwNC40MjcsMTExLjQ0bC0xLjI1My0xLjI1NGMtMTEuNzc2LTExLjc3Ni0zMC45NjctMTEuODAyLTQyLjgxNCwwLjAzNWwtNDYuMDg5LDQ2LjU3NCAgICAgYy0yLjQyOCwyLjQzNi02LjMxMiwyLjUzNC04Ljg0NSwwLjIwM2wtNjQuNjE4LTU5LjY1N2MtNi4yNzYtNS44LTE0LjQ0Mi04Ljk4Ny0yMi45OTYtOC45ODdoLTk2LjEyNCAgICAgYy0yLjI2OSwwLTQuNDQsMC44NjUtNi4wODIsMi40MTlsLTgxLjQ3LDc3LjM1NmMtMTEuOTM1LDExLjk0NC0xMi43NTYsMzEuMTk3LTEuODE4LDQyLjkyICAgICBjNS44NDQsNi4yNjgsMTMuNzM2LDkuNzE5LDIyLjIxOSw5LjcxOWgwLjE1YzguNDEzLTAuMDQ0LDE2LjQ5OS0zLjYxOSwyMi4wODctOS43MjhsNTcuNTM4LTYwLjg5M2gyMC41OTVMMTIwLjYzLDMwMC4yMThIMzcuODEgICAgIGMtMTkuNjMzLDAtMzUuNzc4LDE0LjY4LTM2Ljc1OCwzMy40MjFjLTAuNTIxLDkuNzksMi45MDQsMTkuMDk0LDkuNjQsMjYuMTkxYzYuNjM4LDcsMTUuOTY5LDExLjAwOCwyNS42MTgsMTEuMDA4aDEyMy41ODYgICAgIGMyLjQzNiwwLDQuNzY3LTEuMDA2LDYuNDQ0LTIuNzk4bDYzLjMyLTY3LjU5M2w1My4yNDgsNTUuNjg0bC0xNi4wNzUsMTAyLjczNWMtNC4wNTIsMTcuMDIsNC4xMTQsMzQuMzU3LDE5LjQxMiw0MS4xOTggICAgIGM0LjcxNCwyLjExOSw5LjcxOSwzLjE3OCwxNC42OTgsMy4xNzhjNS4zNTgsMCwxMC42OS0xLjIyNywxNS41OTgtMy42NTVjOS40ODEtNC42OTYsMTYuMjk2LTEzLjI4NSwxOC43NzYtMjMuOTY3ICAgICBsMjcuNDYzLTE0Ny4zMDZjMC41My0yLjg2LTAuMzgtNS44MDktMi40NDUtNy44NjVsLTczLjI5NS03My4xOThsNTguMjI3LTU4LjEzOGw0MC41ODksNDAuNTggICAgIGMxMS4zMzUsMTEuMzM1LDMxLjA5MSwxMS4zMzUsNDIuNDE3LDBsNzYuMTU2LTc2LjE0N2M1LjYyMy01LjYyMyw4LjcyMi0xMy4xMDksOC43MjItMjEuMDU0ICAgICBDNTEzLjE0OSwxMjQuNTQsNTEwLjA1LDExNy4wNjMsNTA0LjQyNywxMTEuNDR6IiBmaWxsPSIjODA4MDgwIi8+CgkJCTxwYXRoIGQ9Ik00MDcuMDY1LDExNC44MzdjMjkuMjExLDAsNTIuOTY2LTIzLjc1NSw1Mi45NjYtNTIuOTY2YzAtMjkuMjExLTIzLjc1NS01Mi45NjYtNTIuOTY2LTUyLjk2NiAgICAgYy0yOS4yMSwwLTUyLjk2NiwyMy43NTUtNTIuOTY2LDUyLjk2NkMzNTQuMSw5MS4wODIsMzc3Ljg1NSwxMTQuODM3LDQwNy4wNjUsMTE0LjgzN3oiIGZpbGw9IiM4MDgwODAiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                                  </a>
+                                  <p class="interest-tag">running</p>
+                                </li>
+                                <li class="interest-tag"> <!-- cycling -->
+                                  <a href="http://example.com" target="_blank">
+                                    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgNjEyIDYxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjEyIDYxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJkaXJlY3Rpb25zLWJpa2UiPgoJCTxwYXRoIGQ9Ik00MDgsMTMyLjZjMjUuNSwwLDQ1LjktMjAuNCw0NS45LTQ1LjlTNDMzLjUsNDAuOCw0MDgsNDAuOHMtNDUuOSwyMC40LTQ1LjksNDUuOVMzODIuNSwxMzIuNiw0MDgsMTMyLjZ6IE00ODQuNSwzMTYuMiAgICBjLTcxLjQsMC0xMjcuNSw1Ni4xLTEyNy41LDEyNy41czU2LjEsMTI3LjUsMTI3LjUsMTI3LjVTNjEyLDUxNS4xMDEsNjEyLDQ0My43UzU1NS45LDMxNi4yLDQ4NC41LDMxNi4yeiBNNDg0LjUsNTMyLjk1ICAgIGMtNDguNDUsMC04OS4yNS00MC44MDEtODkuMjUtODkuMjVjMC00OC40NTEsNDAuOC04OS4yNSw4OS4yNS04OS4yNXM4OS4yNSw0MC43OTksODkuMjUsODkuMjUgICAgQzU3My43NSw0OTIuMTQ5LDUzMi45NSw1MzIuOTUsNDg0LjUsNTMyLjk1eiBNMzc3LjQsMjY1LjJoMTA3LjF2LTQ1LjloLTgxLjZsLTQ4LjQ1LTg0LjE1Yy03LjY1LTEyLjc1LTIwLjQtMjAuNC0zOC4yNS0yMC40ICAgIGMtMTIuNzUsMC0yMi45NSw1LjEtMzAuNiwxMi43NWwtOTQuMzUsOTQuMzVjLTcuNjUsNy42NS0xMi43NSwxNy44NS0xMi43NSwzMC42YzAsMTUuMyw3LjY1LDMwLjYsMjAuNCwzOC4yNWw4Ni43LDUxdjEyNy41aDQ1LjkgICAgVjMwMy40NWwtNTYuMS00My4zNWw1OC42NS01OC42NUwzNzcuNCwyNjUuMnogTTEyNy41LDMxNi4yQzU2LjEsMzE2LjIsMCwzNzIuMywwLDQ0My43czU2LjEsMTI3LjUsMTI3LjUsMTI3LjUgICAgUzI1NSw1MTUuMTAxLDI1NSw0NDMuN1MxOTguOSwzMTYuMiwxMjcuNSwzMTYuMnogTTEyNy41LDUzMi45NWMtNDguNDUsMC04OS4yNS00MC44MDEtODkuMjUtODkuMjUgICAgYzAtNDguNDUxLDQwLjgtODkuMjUsODkuMjUtODkuMjVzODkuMjUsNDAuNzk5LDg5LjI1LDg5LjI1QzIxNi43NSw0OTIuMTQ5LDE3NS45NSw1MzIuOTUsMTI3LjUsNTMyLjk1eiIgZmlsbD0iIzgwODA4MCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                                  </a>
+                                  <p>biking</p>
+                                </li>
+                            </ul><!-- /o-float-box -->
+                        </div><!-- /o-section__content -->
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+            <!-- ################################ -->
+            <!-- ############ FOOTER ############ -->
+            <!-- ################################ -->
+
+            <section class="o-section  t-section  o-section--footer">
+
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
+
+                <div class="o-container">
+                    <div class="o-section__container">
+
+                        <header class="o-section__header  t-section__header">
+                            <div class="o-content">
+                                <h2 class="o-section__heading">
+                                    Contact
+                                </h2>
+                                <div class="o-content__body  o-section__description">
+                                    Call me, maybe.
+                                </div>
+                            </div>
+                        </header><!-- /o-section__header -->
+
+                        <div class="o-section__content  t-section__content  ">
+
+                                <div class="c-footer__contact">
+                                    <div class="o-grid">
+
+                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                        <div class="o-content">
+                                            <div class="o-content__body">
+                                                <h4>Brisbane</h4>
+                                                <address>Australia</address>
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+
+                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                        <div class="o-content">
+                                            <div class="o-content__body">
+                                                <h4>Phone</h4>
+                                                <p>
+                                                    534.456.886
+                                                </p>
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+
+                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                        <div class="o-content">
+                                            <div class="o-content__body">
+                                                <a href="#" target="_blank" class="t-link-container">
+                                                    <h4>Web</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">
+                                                            duanevantwest.com
+                                                        </span>
+                                                    </p>
+                                                </a><!-- /o-link-container -->
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+
+                                    <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                        <div class="o-content">
+                                            <div class="o-content__body">
+                                                <a href="#" target="_blank" class="t-link-container">
+                                                    <h4>Email</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">
+                                                            duanevantwest@gmail.com
+                                                        </span>
+                                                    </p>
+                                                </a><!-- /o-link-container -->
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+
+                                </div><!-- /o-grid -->
+                                </div><!-- /c-footer__contact -->
+
+                                <hr class="c-footer__contact-divider" />
+
+                                <div class="o-content">
+                                    <div class="c-footer__bottom">
+                                        <div class="c-footer__brand">
+
+                                            <div class="c-brand">
+                                                <div class="o-content__body">
+                                                    <h1 class="c-brand__title  t-title">
+                                                        <span class="c-brand__sizer  c-brand__sizer--sm">
+                                                            <span class="a-footer  c-brand__first-word  t-title__first-word">
+                                                                Duane
+                                                            </span>
+                                                            <span class="a-footer  c-brand__second-word  t-title__second-word">
+                                                                van Twest
+                                                            </span>
+                                                        </span>
+                                                    </h1>
+                                                </div><!-- /o-content__body -->
+                                            </div><!-- /c-brand -->
+
+                                        </div><!-- /c-footer__brand -->
+
+                                        <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
+                                            <li class="a-footer">
+                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="a-footer">
+                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-dribbble"></i>
+                                                </a>
+                                            </li>
+                                            <li class="a-footer">
+                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fa  fa-lg  fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </ul><!-- /c-footer__social-buttons -->
+<div>Icons made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                                    </div><!-- /c-footer__bottom -->
+                                </div><!-- /o-content -->
+
+                        </div><!-- /o-section__content -->
+
+                    </div><!-- /o-section__container -->
+                </div><!-- /o-container -->
+
+            </section><!-- /o-section -->
+
+
+
+        </div><!-- /c-main-container -->
+
+    </body>
+    <script>
+
+  console.log("setup accordion onclick")
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+  console.log(acc.length)
+        // for (i = 0; i < acc.length; i++) {
+        //     acc[i].onclick = function(){
+        //       console.log("toggle the actiove something")
+        //         this.classList.toggle("active");
+        //         var panel = this.nextElementSibling;
+        //         if (panel.style.display === "block") {
+        //             panel.style.display = "none";
+        //         } else {
+        //             panel.style.display = "block";
+        //         }
+        //     }
+        // }
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          }
+        }
+
+        console.log("setup dvt onclick")
+              var acc = document.getElementsByClassName("dvt");
+              var i;
+        console.log(acc.length)
+
+              for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                  console.log("div clicked")
+                  this.classList.toggle("active");
+                  var dvt = this.nextElementSibling;
+                  var panel = dvt.nextElementSibling;
+                  console.log(panel.style.maxHeight)
+                  console.log(panel)
+                  if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                  } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                  }
+                }
+              }
+  </script>
+
+
+</html>
