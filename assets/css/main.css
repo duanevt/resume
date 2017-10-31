@@ -642,7 +642,7 @@ img[height] {
 .o-media--block > .o-media__figure {
   margin-left: 0;
   margin-right: 0;
-  width: 2.8rem;
+  width: 3.8rem;
 }
 
 .o-container {
@@ -2469,6 +2469,10 @@ img[height] {
 
 .u-show-xl {
   display: none !important;
+}
+
+.logo-img {
+  height: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
