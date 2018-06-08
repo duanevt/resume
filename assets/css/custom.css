@@ -185,3 +185,11 @@ li.interest-tag p {
 li.interest-tag:hover p {
   opacity: 1;
 }
+
+.logo-img {
+  height: 5rem;height: 5rem;
+}
+
+.logo-edu {
+  width: 2rem;
+}
