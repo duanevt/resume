@@ -113,7 +113,6 @@ button.accordion.active, button.accordion:hover {
 div.dvt {
     border-width: 5px;
     border-style: dotted;
-    border-color: #fff;
 }
 
 div.dvt.active, div.dvt:hover {
@@ -204,6 +203,10 @@ li.interest-tag:hover p {
   li.interest-tag p {
     opacity: 1;
   }
+}
+
+html.can-touch li.interest-tag p {
+  opacity: 1;
 }
 
 .logo-img {

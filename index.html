@@ -26,6 +26,17 @@ console.log(acc.length)
           }
 
 
+      document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+          document.documentElement.classList.add('can-touch') // add "can-touch" class to document root using classList API
+          document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+      }, false)
+
+      var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
+      if (!touchsupport){ // browser doesn't support touch
+          document.documentElement.className += " non-touch"
+      }
+
+
   </script>
         <title>Duane's Resume</title>
 
@@ -101,12 +112,14 @@ console.log(acc.length)
                                             <img class="c-avatar__img" src="assets/images/header/dvt_avatar.jpg" alt="">
                                         </div><!-- /c-avatar -->
                                     </div><!-- /c-header-avatar -->
-                                    <button type="button" class="btn btn-outline" name="button"
-                                            >
-                                      theme
-                                    </button>
-                                    <a onclick="setStyleSheet('assets/css/themes.light.css')" href="#">Style 1</a>
-<a onclick="setStyleSheet('assets/css/themes.dark.css')" href="#">Style 2</a>
+                                    <div class="o-grid">
+                                      <div class="o-grid__col-xs-6">
+                                        <a onclick="setStyleSheet('assets/css/themes.light.css')" style="float: left" href="#">light</a>
+                                      </div>
+                                      <div class="o-grid__col-xs-6">
+                                        <a onclick="setStyleSheet('assets/css/themes.dark.css')" style="float:right" href="#">dark</a>
+                                      </div>
+                                    </div>
                                 </div><!-- /c-header__inner-header -->
                             </header><!-- /o-section__header -->
 
@@ -1697,7 +1710,10 @@ console.log(acc.length)
                                           1989 &ndash; 1991
                                         </div>
                                         <h3 class="c-work__heading">
-                                          Stallion Technologies (formerly Anvil Designs)
+                                          Stallion Technologies
+                                        </h3>
+                                        <h3>
+                                          (formerly Anvil Designs)
                                         </h3>
                                         <h4 class="c-work__title">
                                           Hardware Design Engineer
@@ -1709,19 +1725,11 @@ console.log(acc.length)
                                       </div>
                                       <div class="o-grid__col-md-7">
                                         <p>
-                                          Safety critical interface between train axle counting equipment and computer-based interlocking system
+                                            Stallion’s product range includes a variety of network access servers that provide shared Internet access and remote access, and a range of multiport serial I/O adapters that deliver high-speed serial connectivity.
                                         </p>
                                       </div>
                                       <div class="panel employment-detail">
                                         <div class="o-grid">
-                                          <div class="o-grid__col-md-12 company-overview">
-                                            <h3>
-                                              Company Overview
-                                            </h3>
-                                            <p>
-                                              Stallion’s product range includes a variety of network access servers that provide shared Internet access and remote access, and a range of multiport serial I/O adapters that deliver high-speed serial connectivity.
-                                            </p>
-                                          </div>
                                           <div class="o-grid__col-md-12">
                                             <h2>Responsibilities</h2>
                                             <ul>
