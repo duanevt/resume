@@ -6,10 +6,11 @@
 
 /*# sourceMappingURL=custom.css.map */
 
-.employment-detail {
+div.panel.employment-detail {
   background-color: rgb(236, 238, 238);
-  margin-top: 1em;
-  padding-top: 10px;
+  margin: 1.5em 1.5rem 0 0;
+  padding-top: 0px;
+  border-radius: 10px;
 }
 
 .accordion {
@@ -109,8 +110,18 @@ button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
+div.dvt {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: #fff;
+}
+
 div.dvt.active, div.dvt:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    border-color: #F8BB10;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 button.accordion:after {
@@ -168,6 +179,9 @@ div.company-overview p {
   font-style: italic;
 }
 
+.c-work__prize {
+  padding-top: 1rem;
+}
 /*.interest-tag {
   opacity: 0;
   font-size: 1.4rem;
@@ -184,6 +198,12 @@ li.interest-tag p {
 
 li.interest-tag:hover p {
   opacity: 1;
+}
+
+@media (hover:none), (hover:on-demand) {
+  li.interest-tag p {
+    opacity: 1;
+  }
 }
 
 .logo-img {
