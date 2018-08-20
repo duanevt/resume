@@ -1273,6 +1273,7 @@ img[height] {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: calc(99.999999% * 0.41667);
+    position: relative;
   }
   .o-grid__col-md-5:nth-child(1n){
     margin-right: 0;
