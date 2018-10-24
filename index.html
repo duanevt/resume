@@ -4,26 +4,47 @@
 
     <head>
       <script>
-          function setStyleSheet(url){
-             var stylesheet = document.getElementById("themestyle");
-             stylesheet.setAttribute('href', url);
+          var theme = 0; // set theme to light at start.
+
+          // function themeChanger() {
+          //   console.log("change theme mate");
+            var stylesheet = document.getElementById("themestyle");
+            if (theme > 0) {
+              theme = 0;
+              stylesheet.setAttribute('href', 'assets/css/themes.light.css');
+            } else {
+              theme = 1;
+              stylesheet.setAttribute('href', 'assets/css/themes.dark.css');
+            }
           }
-console.log("setup accordion onclick")
-          var acc = document.getElementsByClassName("accordion");
-          var i;
-console.log(acc.length)
-          for (i = 0; i < acc.length; i++) {
-              acc[i].onclick = function(){
-                console.log("toggle the actiove something")
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                      panel.style.display = "none";
-                  } else {
-                      panel.style.display = "block";
-                  }
-              }
-          }
+
+          // function setStyleSheet(url){
+          //    var stylesheet = document.getElementById("themestyle");
+          //    stylesheet.setAttribute('href', url);
+          //    var button = document.getElementById("themebutton");
+          //    (theme > 0) ? theme=0 : theme=1;
+          //    console.log("changed theme to " + theme)
+          //    button.innerHTML = "DvT";
+          //    var themester = document.getElementById("dn");
+          //
+          // }
+//           console.log("theme is " + theme);
+// console.log("setup accordion onclick")
+//           var acc = document.getElementsByClassName("accordion");
+//           var i;
+// console.log(acc.length)
+//           for (i = 0; i < acc.length; i++) {
+//               acc[i].onclick = function(){
+//                 console.log("toggle the actiove something")
+//                   this.classList.toggle("active");
+//                   var panel = this.nextElementSibling;
+//                   if (panel.style.display === "block") {
+//                       panel.style.display = "none";
+//                   } else {
+//                       panel.style.display = "block";
+//                   }
+//               }
+//           }
 
 
       document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
@@ -48,7 +69,7 @@ console.log(acc.length)
 
         <!-- Google Font: Lato -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> -->
         <!-- FontAwesome -->
         <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
 
@@ -65,6 +86,10 @@ console.log(acc.length)
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/custom.css">
+        <!-- Toggle CSS -->
+        <link rel="stylesheet" href="assets/css/toggle.css">
+        <link rel="stylesheet" href="assets/css/download-buttons.css">
+        <!-- <link rel="stylesheet" href="assets/css/fizzy.css"> -->
 
         <!-- jQuery -->
         <script src="assets/js/jquery.min.js"></script>
@@ -112,14 +137,7 @@ console.log(acc.length)
                                             <img class="c-avatar__img" src="assets/images/header/dvt_avatar.jpg" alt="">
                                         </div><!-- /c-avatar -->
                                     </div><!-- /c-header-avatar -->
-                                    <div class="o-grid">
-                                      <div class="o-grid__col-xs-6">
-                                        <a onclick="setStyleSheet('assets/css/themes.light.css')" style="float: left" href="#">light</a>
-                                      </div>
-                                      <div class="o-grid__col-xs-6">
-                                        <a onclick="setStyleSheet('assets/css/themes.dark.css')" style="float:right" href="#">dark</a>
-                                      </div>
-                                    </div>
+
                                 </div><!-- /c-header__inner-header -->
                             </header><!-- /o-section__header -->
 
@@ -152,24 +170,81 @@ console.log(acc.length)
                                             </div><!-- /c-brand -->
 
                                         </div><!-- /c-header__brand -->
+                                        <ul class="dvt-buttons">
+                                          <li class="a-header">
+                                            <input type="checkbox" id="themeswitch" onclick="themeChanger()"/>
+                                            <label id="themeswitch-label" for="themeswitch">light / dark</label>
+                                          </li>
+                                          <li class="a-header">
+                                            <label for="ms-download" class="ms-download-text">
+                                              <div class="ms-content">
+                                                <div class="ms-content-inside">
+                                                  <a href="assets/images/django.png" download target="_blank" id="ms-anchor"></a>
+                                                  <input type="checkbox" id="ms-download" />
 
-                                        <ul class="c-header__social-buttons  c-social-buttons">
-                                            <li class="a-header">
-                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-dribbble"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-twitter"></i>
-                                                </a>
-                                            </li>
+                                                  <div class="ms-line-down-container">
+                                                    <div class="ms-line-down"></div>
+                                                  </div>
+                                                  <div class="ms-line-point"></div>
+                                                </div>
+                                              </div>
+                                            </label>
+                                          </li>
+                                          <!-- <li class="a-header">
+                                            <label for="ms-download" class="ms-download-text">
+                                              <div class="ms-content">
+                                                <div class="ms-content-inside">
+                                                  <a href="assets/images/django.png" download target="_blank" id="ms-anchor"></a>
+                                                  <input type="checkbox" id="ms-download" />
+
+                                                  <div class="ms-line-down-container">
+                                                    <div class="ms-line-down"></div>
+                                                  </div>
+                                                  <div class="ms-line-point"></div>
+                                                </div>
+                                              </div>
+                                            </label>
+                                          </li> -->
+
                                         </ul><!-- /c-header__social-buttons -->
+
+                                        <!-- try some download buttons -->
+<!--
+                                        <ul class="dvt-buttons">
+                                          <li class="a-header">
+                                            <div class="download-wrap">
+                                              <div class="download">
+                                                <a href="assets/images/django.png" download target="_blank" class="button-download">
+                                                download
+                                                <span class="icon-wrap">
+                                                  <i class="icon-download"></i>
+                                                </span>
+                                              </a>
+                                                <div class="meter">
+                                                  <span class="meter-progress"></span>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                          </li>
+
+                                          <li class="a-header">
+                                            <label for="ms-download" class="ms-download-text">
+                                              <div class="ms-content">
+                                                <div class="ms-content-inside">
+                                                  <a href="assets/images/django.png" download target="_blank" id="ms-anchor"></a>
+                                                  <input type="checkbox" id="ms-download" />
+
+                                                  <div class="ms-line-down-container">
+                                                    <div class="ms-line-down"></div>
+                                                  </div>
+                                                  <div class="ms-line-point"></div>
+                                                </div>
+                                              </div>
+                                            </label>
+                                          </li>
+
+                                        </ul> -->
 
                                     </div><!-- /c-header__top -->
 
@@ -2691,6 +2766,7 @@ console.log(acc.length)
                 }
               }
   </script>
+  <script src="assets/js/buttons.js"></script>
 
 
 </html>

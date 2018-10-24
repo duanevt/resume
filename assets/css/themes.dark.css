@@ -37,7 +37,7 @@ h6 {
 a,
 .t-link-container .t-link-container__item,
 .t-link-container:hover .t-link-container__item--blended {
-  color: #e0a80d;
+  color: #0385bb;
 }
 
 /* Hover Links */
@@ -62,18 +62,18 @@ hr,
 /* Primary Color */
 .t-primary-color,
 .t-primary-color-line {
-  color: #e0a80d;
+  color: #0385bb;
 }
 
 .t-primary-bg,
 .t-primary-color-line {
-  background: #e0a80d;
+  background: #0385bb;
 }
 
 /* Preloader */
 .t-preloader__spinner:not(:required):before {
-  border-top-color: #e0a80d;
-  border-bottom-color: #e0a80d;
+  border-top-color: #0385bb;
+  border-bottom-color: #0385bb;
 }
 
 /* Brand Colors */
@@ -82,7 +82,7 @@ hr,
 }
 
 .t-title__second-word {
-  color: #e0a80d;
+  color: #0385bb;
 }
 
 .t-sub-title {
@@ -131,7 +131,7 @@ hr,
 }
 
 .t-social-button:hover .fa {
-  color: #e0a80d;
+  color: #0385bb;
 }
 
 /* Image Overlay */
