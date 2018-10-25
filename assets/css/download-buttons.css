@@ -47,19 +47,8 @@
   top: 2px;
   font-size: 16px;
   color: darkgrey;
+}
 
-}
-.ms-download-text{
-  margin-left: 100px;
-}
-.ms-download-text:before {
-  content: 'download';
-  position: absolute;
-  left: 10px;
-  top: 2px;
-  font-size: 16px;
-  color: darkgrey;
-}
 #ms-download:checked ~ .ms-line-down-container {
 	transform: rotate(-360deg);
 	transition: transform 1.5s ease 1.25s;
