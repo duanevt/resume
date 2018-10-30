@@ -6,6 +6,28 @@
 
 /*# sourceMappingURL=custom.css.map */
 
+#c-header__logo-image {
+  width: 100px;
+}
+
+.c-header__dvt-logo {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+
+@media (min-width: 1024px) {
+  .c-header__dvt-logo {
+    position: absolute;
+    bottom: 205px;
+    right: 0;
+  }
+  
+}
+
 .kontractor_company {
   display: block;
   /*background-color: pink;*/
