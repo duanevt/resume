@@ -6,7 +6,29 @@
 
 /*# sourceMappingURL=custom.css.map */
 
+.kontractor_company {
+  display: block;
+  /*background-color: pink;*/
+  border-style: solid;
+  border-width: 1px 0 0 2px;
+  border-color: #727272;
+  margin-top: 1rem;
+  padding: 5px 0 0 2px;
+}
 
+@media (min-width: 600px) {
+  .kontractor_company{
+    display: flex;
+    border-style: solid;
+    border-width: 1px 0 0 2px;
+    /*border-color: #727272;*/
+    border-color: #0d9dd9;
+
+    margin-top: 1rem;
+    padding: 5px 0 0 2px;
+  }
+
+}
 /* action buttons like download and theme */
 .dvt-buttons {
   display: -webkit-flex;
@@ -35,7 +57,6 @@
 
 
 div.panel.employment-detail {
-  background-color: rgb(236, 238, 238);
   margin: 1.5em 1.5rem 0 0;
   padding-top: 0px;
   border-radius: 10px;
@@ -112,7 +133,7 @@ div.dvt {
  height: 3rem;
  width: 3rem;
  border-style: solid;
- border-width: 0.3rem;
+ border-width: 0.2rem;
  border-radius: 50%;
  border-color: #0d9dd9;
 
@@ -140,7 +161,7 @@ div.dvt.active .ring{
        width: 2.8em;
        display: block;
        padding: 0.5em;
-       margin: 1em auto;
+       margin: 1.1em auto;
        position: relative;
        /*top: 20px;*/
        cursor: pointer;
@@ -151,7 +172,7 @@ div.dvt.active .ring{
        position: absolute;
        background-color: transparent;
        top: 0;
-       left: 0;
+       left: 1px;
        width: 20px;
        height: 6px;
        display: block;
@@ -163,7 +184,7 @@ div.dvt.active .ring{
        content: "";
        background-color: #0d9dd9;
        width: 18px;
-       height: 6px;
+       height: 4px;
        display: block;
        float: right;
        border-radius: 6px 10px 10px 6px;
@@ -175,7 +196,7 @@ div.dvt.active .ring{
        position: absolute;
        background-color: transparent;
        top: 0px;
-       left: 11px;
+       left: 15px;
        width: 20px;
        height: 6px;
        display: block;
@@ -187,7 +208,7 @@ div.dvt.active .ring{
        content: "";
        background-color: #0d9dd9;
        width: 18px;
-       height: 6px;
+       height: 4px;
        display: block;
        float: right;
        border-radius: 10px 6px 6px 10px;
